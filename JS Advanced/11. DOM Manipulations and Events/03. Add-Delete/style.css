@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 body {
     background: #eeeeee;
-    font-family: "Source Code Pro", monospace;
+    font-family: "Source Code Pro", monospace;
 }
 
 body>h1 {
