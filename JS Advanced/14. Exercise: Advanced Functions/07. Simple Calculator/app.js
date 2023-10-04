@@ -10,7 +10,6 @@ function calculator() {
             this.resultElement = document.querySelector(resultSelector);
         },
         add: () => {
-            debugger
             this.resultElement.value = Number(this.firstNumElement.value) + Number(this.secondNumElement.value);
         },
         subtract: () => {
