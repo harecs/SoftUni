@@ -18,7 +18,3 @@ function printArgumentsInfo(...params) {
         console.log(`${type} = ${tally[type]}`);
     }
 }
-
-printArgumentsInfo('cat', 42, function () { console.log('Hello world!'); })
-console.log('=========================');
-printArgumentsInfo({ name: 'bob' }, 3.333, 9.999)
