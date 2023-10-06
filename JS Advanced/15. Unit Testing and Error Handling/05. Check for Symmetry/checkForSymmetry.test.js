@@ -1,4 +1,4 @@
-const { expect, assert, should } = require('chai');
+const expect = require('chai').expect;
 const isSymmetric = require('./checkForSymmetry.js').isSymmetric;
 
 
