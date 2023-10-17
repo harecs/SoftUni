@@ -87,7 +87,7 @@ function solve() {
 
                 const headingEle = document.createElement('h1');
                 headingEle.id = 'thank-you';
-                headingEle.textContent = 'Thank you, have a nice day!' // in the document check the whitespace at the end
+                headingEle.textContent = 'Thank you, have a nice day!'
                 const backButtonEle = document.createElement('button');
                 backButtonEle.id = 'back-btn';
                 backButtonEle.textContent = 'Back';
@@ -101,78 +101,6 @@ function solve() {
 
                 function onBack(e) {
                     location = document.location;
-                    // bodyEle.removeChild(headingEle);
-                    // bodyEle.removeChild(backButtonEle);
-
-                    //                     const mainEle = document.createElement('div');
-                    //                     mainEle.id = 'main';
-                    //                     mainEle.innerHTML = `<section id="welcome">
-                    //     <h1>Ski Lift</h1>
-                    //     <div class="home-container">
-                    //         <div class="info">
-                    //             <h1>
-                    //                 <span>❄❄❄❄❄❄❄❄❄❄❄</span>
-                    //                 Buy tickets
-                    //                 <span>❄❄❄❄❄❄❄❄❄❄❄</span>
-                    //             </h1>
-                    //         </div>
-                    //     </div>
-                    // </section>
-
-                    // <div id="wrapper">
-
-                    //     <section id="append-ticket">
-                    //         <div class="first-container">
-
-                    //             <h1>Buy ticket</h1>
-
-                    //             <div class="container-text">
-                    //                 <form action="">
-                    //                     <label for="first-name">First name:</label>
-                    //                     <input type="text" id="first-name" name="first-name">
-
-                    //                     <label for="last-name">Last name:</label>
-                    //                     <input type="text" id="last-name" name="last-name">
-
-                    //                     <label for="people-count">Number of people:</label>
-                    //                     <input type="number" id="people-count" name="people-count">
-
-                    //                     <label for="from-date">From Date:</label>
-                    //                     <input type="date" id="from-date" name="from-date">
-
-                    //                     <label for="people-count">Days:</label>
-                    //                     <input type="number" id="days-count" name="days-count">
-
-                    //                     <button id="next-btn" type="submit">Next step ⇨</button>
-                    //                 </form>
-
-
-                    //             </div>
-                    //         </div>
-                    //     </section>
-
-                    //     <section id="info-ticket">
-                    //         <div class="ticket-info-container">
-                    //             <div class="first-container">
-                    //                 <h1>Ticket Preview</h1>
-                    //                 <ul class="ticket-info-list">
-                    //                 </ul>
-                    //             </div>
-                    //         </div>
-                    //     </section>
-
-                    //     <section id="confirm-ticket-section">
-                    //         <div class="confirm-container">
-                    //             <div class="first-container">
-                    //                 <h1>Confirm ticket</h1>
-                    //                 <ul class="confirm-ticket">
-                    //                 </ul>
-                    //             </div>
-                    //         </div>
-                    //     </section>
-                    // </div>`;
-                    //                     bodyEle.appendChild(mainEle);
-                    //                     solve();
                 }
             }
 
