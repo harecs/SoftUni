@@ -10,5 +10,9 @@ In the "JS Advanced" course, students will gain in-depth knowledge of the JavaSc
 - Implementing object-oriented programming
 - Implementing functional programming
 
-# [Certificate](https://softuni.bg/Certificates/Details/188139/69720c3d)
+# Certificate
 [![Zahari Lazarov Certificate - JS Advanced - September 2023](./Zahari%20Lazarov%20Certificate%20-%20JS%20Advanced%20-%20September%202023.jpeg)](https://softuni.bg/Certificates/Details/188139/69720c3d)
+
+> **Issue date:** 22/10/2023  
+> **Check the validity of this document here:**  
+> https://softuni.bg/Certificates/Details/188139/69720c3d
