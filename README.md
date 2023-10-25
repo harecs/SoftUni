@@ -2,7 +2,7 @@
 
 # About
 
-**SoftUni's professional software engineering program aims to build all the fundamental knowledge and practical skills needed to become a software engineer by working with the latest software technologies and learning the best practices in programming.**
+#### SoftUni's professional software engineering program aims to build all the fundamental knowledge and practical skills needed to become a software engineer by working with the latest software technologies and learning the best practices in programming.
 
 # Curriculum
 
