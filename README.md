@@ -2,7 +2,7 @@
 
 # About
 
-#### SoftUni's professional software engineering program aims to build all the fundamental knowledge and practical skills needed to become a software engineer by working with the latest software technologies and learning the best practices in programming.
+**SoftUni's professional software engineering program aims to build all the fundamental knowledge and practical skills needed to become a software engineer by working with the latest software technologies and learning the best practices in programming.**
 
 # Curriculum
 
@@ -29,4 +29,5 @@ The curriculum consists of several professional fields and subsequent specializa
 - ### React
 
 # Certificates (Links)
-> **JS Advanced:** https://softuni.bg/Certificates/Details/188139/69720c3d
+> **JS Advanced:**  
+> https://softuni.bg/Certificates/Details/188139/69720c3d
