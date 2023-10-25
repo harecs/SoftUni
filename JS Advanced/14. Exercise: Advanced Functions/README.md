@@ -1,4 +1,4 @@
-# [Advanced Functions - Exercise Problems](https://judge.softuni.org/Contests/2763/DOM-Manipulation-and-Events-Exercise)
+# [Advanced Functions - Exercise Problems](https://judge.softuni.org/Contests/2765/Advanced-Functions-Exercise)
 
     01. Sort Array
 
