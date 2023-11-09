@@ -38,7 +38,7 @@ function lockedProfile() {
 				<label>Email:</label>
 				<input type="email" name="user1Email" value="${profile.email}" disabled readonly />
 				<label>Age:</label>
-				<input type="text" name="user1Age" value="${profile.age}" disabled readonly />
+				<input type="email" name="user1Age" value="${profile.age}" disabled readonly />
 			</div>
 			<button>Show more</button>`;
 
