@@ -532,7 +532,7 @@ describe('E2E tests', function () {
       total(5);
 
       await page.click('nav >> text=Movies');
-      await page.waitForTimeout('#movie');
+      await page.waitForTimeout(interval);
       await page.click(
         `#movie > div div ul li:has-text("${data.title}") >> text=Details`
       );
