@@ -18,7 +18,7 @@ The curriculum consists of several professional fields and subsequent specializa
 
 ## *JS Web*
 
-- ### JS Back-end
+- ### [JS Back-end](https://github.com/harecs/SoftUni/tree/main/JS%20Back-End)
 
 - ### Angular
 
@@ -31,3 +31,6 @@ The curriculum consists of several professional fields and subsequent specializa
 # Certificates (Links)
 > **JS Advanced:**  
 > https://softuni.bg/Certificates/Details/188139/69720c3d
+
+> **JS Applications:**  
+> https://softuni.bg/Certificates/Details/195341/cc523b6f
