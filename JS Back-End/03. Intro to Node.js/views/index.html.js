@@ -29,7 +29,8 @@ module.exports = (cats) => `<!DOCTYPE html>
     <main>
         <section class="cats">
             <ul>
-            ${cats.map(cat => `<li>
+            ${cats.map(cat => `
+                <li>
                     <img src="${cat.image}" alt="Black Cat">
                     <h3>${cat.name}</h3>
                     <p><span>Breed: </span>${cat.breed}</p>
@@ -38,7 +39,7 @@ module.exports = (cats) => `<!DOCTYPE html>
                         <li class="btn edit"><a href="/cats/edit-cat/${cat.id}">Change Info</a></li>
                         <li class="btn delete"><a href="/cats/view-cat/${cat.id}">New Home</a></li>
                     </ul>
-                </li>`)}
+                </li>`).join('\n')}
             </ul>
         </section>
     </main>
