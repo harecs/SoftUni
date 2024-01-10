@@ -31,12 +31,12 @@ module.exports = (cat, breeds) => `<!DOCTYPE html>
             <label for="image">Image</label>
             <input name="upload" type="text" id="image" value="${cat.image}">
             <label for="group">Breed</label>
-            <select name="breed" id="group">
-                ${breeds.map(breed => {
-                    return breed == cat.breed
-                        ? `<option value="${breed}" selected>${breed}</option>`
-                        : `<option value="${breed}">${breed}</option>`
-                })}
+                <select name="breed" id="group">
+                    ${breeds.map(breed => {
+                        return breed == cat.breed
+                            ? `<option value="${breed}" selected>${breed}</option>`
+                            : `<option value="${breed}">${breed}</option>`
+                    }).join('\n')}
             </select>
             <button>Edit Cat</button>
         </form>

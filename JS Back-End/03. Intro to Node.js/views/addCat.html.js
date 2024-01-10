@@ -32,7 +32,7 @@ module.exports = (breeds) => `<!DOCTYPE html>
             <input name="upload" type="text" id="image">
             <label for="group">Breed</label>
             <select name="breed" id="group">
-                ${breeds.map(breed => `<option value="${breed}">${breed}</option>`)}
+                ${breeds.map(breed => `<option value="${breed}">${breed}</option>`).join('\n')}
             </select>
             <button type="submit">Add Cat</button>
         </form>
