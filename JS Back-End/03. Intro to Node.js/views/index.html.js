@@ -7,7 +7,6 @@ module.exports = (cats) => `<!DOCTYPE html>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="../../content/styles/site.css">
-    <link rel="shortcut icon" type="image/png" href="../../content/images/pawprint.ico" />
     <title>Cat Shelter</title>
 </head>
 
@@ -21,9 +20,9 @@ module.exports = (cats) => `<!DOCTYPE html>
             </ul>
         </nav>
         <h1>Cat Shelter</h1>
-        <form action="/search">
-            <input type="text">
-            <button type="button">Search</button>
+        <form action="/search" method="get" enctype="application/x-www-form-urlencoded">
+            <input type="text" name="search">
+            <button type="submit">Search</button>
         </form>
     </header>
 

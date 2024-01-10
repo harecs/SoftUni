@@ -22,7 +22,7 @@ module.exports = (breeds) => `<!DOCTYPE html>
         <h1>Cat Shelter</h1>
     </header>
     <main>
-        <form action="#" method="" class="cat-form" enctype="multipart/form-data">
+        <form action="" method="post" class="cat-form" enctype="application/x-www-form-urlencoded">
             <h2>Add Cat</h2>
             <label for="name">Name</label>
             <input name="name" type="text" id="name">
