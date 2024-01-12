@@ -29,7 +29,7 @@ module.exports = (cat, breeds) => `<!DOCTYPE html>
             <label for="description">Description</label>
             <textarea name="description" id="description">${cat.description}</textarea>
             <label for="image">Image</label>
-            <input name="upload" type="text" id="image" value="${cat.image}">
+            <input name="image" type="text" id="image" value="${cat.image}">
             <label for="group">Breed</label>
                 <select name="breed" id="group">
                     ${breeds.map(breed => {
