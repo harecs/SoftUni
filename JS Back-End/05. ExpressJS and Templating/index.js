@@ -1,8 +1,11 @@
 const express = require('express');
 const hbs = require('express-handlebars');
+const path = require('path');
+
+const switches = require('./data/switches');
 
 const app = express();
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.engine('hbs', hbs.engine({
     extname: 'hbs'
@@ -10,15 +13,20 @@ app.engine('hbs', hbs.engine({
 app.set('view engine', 'hbs');
 
 app.get('/', (req, res) => {
-    res.render('home', {
-        title: 'Home',
-        description: 'Hello from Hari the dev'
-    });
+    res.render('home');
 });
 
 app.get('/switches', (req, res) => {
-    res.render('switches', {});
+    res.render('switches', { switches });
 });
+
+app.get('/switches/add', (req, res) => {
+    res.redirect('/');
+})
+
+app.get('/switches/:id', (req, res) => {
+    res.render('switchInfo', switches[req.params.id])
+})
 
 
 
