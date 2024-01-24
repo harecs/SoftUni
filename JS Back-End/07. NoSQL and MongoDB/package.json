@@ -4,7 +4,7 @@
   "description": "Relational and Non-Relational - MongoDB and Mongoose Overview - Mongoose Models - CRUD with Mongoose - Mongoose Querying",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
