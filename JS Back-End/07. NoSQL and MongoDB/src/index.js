@@ -58,3 +58,20 @@ Person.deleteOne({ email: 'pesho5000@gmail.com' })
 
 Person.deleteMany({ lastName: 'Petrov' })
     .then(result => console.log(result));
+
+// MONGOOSE QUERIES
+// READ
+Person.find()
+    .where('lastName').equals('Mitev')
+    .then(people => {
+        people.forEach(person => person.logInfo());
+    });
+
+Person.findOne()
+    .where('lastName').equals('Mitev').select('email')
+    .then(result => console.log(result));
+
+Person.find().sort({ age: 1 })
+    .then(people => {
+        people.forEach(person => person.logInfo());
+    });
