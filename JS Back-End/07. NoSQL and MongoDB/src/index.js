@@ -41,3 +41,13 @@ Person.findById('65b0fa06982d7e3a185149b0')
     .then(person => {
         console.log(person);
     });
+
+// UPDATE
+Person.updateOne({ lastName: 'Mitev' }, { age: 64 })
+    .then(result => console.log(result));
+
+Person.updateMany({ lastName: 'Petrov' }, { lastName: 'Petroff' })
+    .then(result => console.log(result));
+
+Person.updateMany({ lastName: 'Petroff' }, { lastName: 'Petrov' })
+    .then(result => console.log(result));
