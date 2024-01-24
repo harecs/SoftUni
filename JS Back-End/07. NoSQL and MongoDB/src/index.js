@@ -1,14 +1,14 @@
-const { MongoClient } = require('mongodb');
+const mongoose = require('mongoose');
 
-const connectionString = 'mongodb://localhost:27017';
-const client = new MongoClient(connectionString);
+const Person = require('./models/Person');
 
-async function run() {
-    const db = client.db('haridb');
-    const collection = db.collection('dogs');
+mongoose.connect('mongodb://localhost:27017/haridb');
 
-    const dogs = await collection.find().toArray();
-    console.log(dogs);
-}
-
-run();
+Person.create({
+    firstName: 'Stamat',
+    lastName: 'Petrov',
+    age: 39,
+    email: 'stamat@stamatpetrov-bg.info'
+}).then((result) => {
+    console.log(result);
+});
