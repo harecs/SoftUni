@@ -19,6 +19,10 @@ personSchema.virtual('fullName')
         return `${this.firstName} ${this.lastName}`;
     });
 
+personSchema.method('logInfo', function () {
+    console.log(`I'm ${this.fullName} and I'm ${this.age} years old. You can email me at ${this.email}`);
+});
+
 const Person = mongoose.model('Person', personSchema);
 
 module.exports = Person;
