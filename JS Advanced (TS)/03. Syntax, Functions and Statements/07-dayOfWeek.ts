@@ -1,5 +1,5 @@
-function returnIndexDayOfWeek(dayString) {
-    let result;
+function returnIndexDayOfWeek(dayString: string) {
+    let result: number | 'error';
 
     switch (dayString) {
         case 'Monday': result = 1; break;
@@ -14,3 +14,7 @@ function returnIndexDayOfWeek(dayString) {
 
     return result;
 }
+
+console.log(returnIndexDayOfWeek('Monday'));
+console.log(returnIndexDayOfWeek('Friday'));
+console.log(returnIndexDayOfWeek('Invalid'));
