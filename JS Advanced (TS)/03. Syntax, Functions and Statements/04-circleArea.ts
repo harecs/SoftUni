@@ -1,4 +1,4 @@
-function calculateCircleArea(input) {
+function calculateCircleArea(input: any) {
     const inputType = typeof input;
 
     if (inputType == 'number') {
@@ -8,3 +8,6 @@ function calculateCircleArea(input) {
         console.log(`We can not calculate the circle area, because we receive a ${inputType}.`);
     }
 }
+
+calculateCircleArea(5);
+calculateCircleArea('name');
