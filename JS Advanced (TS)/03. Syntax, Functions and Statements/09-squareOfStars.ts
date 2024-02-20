@@ -1,9 +1,5 @@
-function printSquareOfStars(size?: number) {
+function printSquareOfStars(size: number = 5): void {
     let squareString: string = '';
-
-    if (!size) {
-        size = 5;
-    }
 
     for (let i = 0; i < size; i++) {
         let row: string = '';
@@ -16,7 +12,7 @@ function printSquareOfStars(size?: number) {
         squareString += '\n';
     }
 
-    console.log(squareString.trim());
+    console.log(squareString);
 }
 
 printSquareOfStars(1);
