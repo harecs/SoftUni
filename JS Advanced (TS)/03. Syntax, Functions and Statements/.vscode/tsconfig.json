@@ -3,6 +3,5 @@
         "target": "ES6",
         "module": "CommonJS",
         "sourceMap": true,
-        "lib": ["ES2015"]
     }
 }
