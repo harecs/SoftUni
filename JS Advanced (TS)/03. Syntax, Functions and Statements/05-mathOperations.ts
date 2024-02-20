@@ -1,5 +1,7 @@
-function calculate(firstNum, secondNum, operator) {
-    let result;
+type Operator = '+' | '-' | '*' | '/' | '%' | '**';
+
+function calculate(firstNum: number, secondNum: number, operator: Operator) {
+    let result: number;
 
     switch (operator) {
         case '+': result = firstNum + secondNum; break;
@@ -12,3 +14,6 @@ function calculate(firstNum, secondNum, operator) {
 
     console.log(result);
 }
+
+calculate(5, 6, '+');
+calculate(3, 5.5, '*');
