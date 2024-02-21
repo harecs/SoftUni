@@ -1,4 +1,4 @@
-function sortByTwoCriteria(array) {
+function sortByTwoCriteria(array: string[]): void {
     array.sort((a, b) => {
         if (a.length - b.length > 0) {
             return 1;
