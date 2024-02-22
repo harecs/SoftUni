@@ -1,4 +1,4 @@
-import { Article } from "src/models/article.model";
+import { Article } from "../models/article.model";
 import { data } from "./seed";
 
 export class ArticleData {
