@@ -1,0 +1,5 @@
+<div class="header">
+    <h1>ToDo List</h1>
+    <input #todoInput (keyup)="enterKeyCheck($event)" type="text" class="todo-input" placeholder="Write your todo list here...">
+    <button (click)="addNewToDo(todoInput.value)" class="btn-add">Add</button>
+</div>
