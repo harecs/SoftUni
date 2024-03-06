@@ -1,29 +1,28 @@
 <div class="w3-top">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
-        <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+        <a routerLink="/" class="w3-bar-item w3-button w3-wide">LOGO</a>
         <!-- Right-sided navbar links -->
         <div class="w3-right w3-hide-small">
-            <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-            <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-            <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-            <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
-            <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a routerLink="/about" class="w3-bar-item w3-button">ABOUT</a>
+            <a routerLink="/team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+            <a routerLink="/work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+            <a routerLink="/pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+            <a routerLink="/contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-        <a (click)="w3_open()" href="javascript:void(0)"
-            class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium">
+        <a (click)="w3_open()" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium">
             <i class="fa fa-bars"></i>
         </a>
     </div>
 </div>
 
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" [style.display]="isSidebarShowed"
-    id="mySidebar">
-    <a (click)="w3_close()" href="javascript:void(0)" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a (click)="w3_close()" href="#about" class="w3-bar-item w3-button">ABOUT</a>
-    <a (click)="w3_close()" href="#team" class="w3-bar-item w3-button">TEAM</a>
-    <a (click)="w3_close()" href="#work" class="w3-bar-item w3-button">WORK</a>
-    <a (click)="w3_close()" href="#pricing" class="w3-bar-item w3-button">PRICING</a>
-    <a (click)="w3_close()" href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    [style.display]="isSidebarShowed" id="mySidebar">
+    <a (click)="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a (click)="w3_close()" routerLink="/about" class="w3-bar-item w3-button">ABOUT</a>
+    <a (click)="w3_close()" routerLink="/team" class="w3-bar-item w3-button">TEAM</a>
+    <a (click)="w3_close()" routerLink="/work" class="w3-bar-item w3-button">WORK</a>
+    <a (click)="w3_close()" routerLink="/pricing" class="w3-bar-item w3-button">PRICING</a>
+    <a (click)="w3_close()" routerLink="/contact" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
