@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'modules-routing-app';
+  scrollToTop(): void {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'instant'
+    });
+  }
 }
