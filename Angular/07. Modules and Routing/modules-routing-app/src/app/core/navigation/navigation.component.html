@@ -18,7 +18,7 @@
 </div>
 
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
-    [style.display]="isSidebarShowed" id="mySidebar">
+    [style.display]="isSidebarShowed ? 'block' : 'none'" id="mySidebar">
     <a (click)="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
     <a (click)="w3_close()" routerLink="/about" class="w3-bar-item w3-button">ABOUT</a>
     <a (click)="w3_close()" routerLink="/team" class="w3-bar-item w3-button">TEAM</a>

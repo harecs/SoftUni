@@ -6,16 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent {
-  isSidebarShowed: string = 'none';
+  isSidebarShowed: boolean = false;
 
   w3_open(): void {
-    this.isSidebarShowed =
-      this.isSidebarShowed == 'none' ?
-        'block' :
-        'none';
+    this.isSidebarShowed = !this.isSidebarShowed;
   }
 
   w3_close(): void {
-    this.isSidebarShowed = 'none';
+    this.isSidebarShowed = false;
   }
 }
