@@ -1,0 +1,13 @@
+<div id="stopInfo" style="width:20em">
+  <div>
+    <label for="stopId">Stop ID: </label>
+    <input id="stopId" type="text">
+    <input (click)="onCheck($event)" id="submit" type="button" value="Check">
+  </div>
+  <div id="result">
+    <div *ngIf="busName" id="stopName">{{busName}}</div>
+    <ul id="buses">
+      <li *ngFor="let bus of busList">Bus {{bus[0]}} arrives in {{bus[1]}} minutes</li>
+    </ul>
+  </div>
+</div>
