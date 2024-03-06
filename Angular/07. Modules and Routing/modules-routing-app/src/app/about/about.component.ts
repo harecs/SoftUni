@@ -10,7 +10,6 @@ import { JsonPlaceholderService } from '../jsonplaceholder.service';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  private URL: string = `https://jsonplaceholder.typicode.com/photos`;
   photos: Photo[] = [];
 
   constructor(private JsonPlaceholderService: JsonPlaceholderService) { }
