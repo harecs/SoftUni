@@ -1,4 +1,3 @@
-<!-- Navbar (sit on top) -->
 <div class="w3-top">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
         <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
@@ -12,9 +11,19 @@
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-            onclick="w3_open()">
+        <a (click)="w3_open()" href="javascript:void(0)"
+            class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium">
             <i class="fa fa-bars"></i>
         </a>
     </div>
 </div>
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" [style.display]="isSidebarShowed"
+    id="mySidebar">
+    <a (click)="w3_close()" href="javascript:void(0)" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a (click)="w3_close()" href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a (click)="w3_close()" href="#team" class="w3-bar-item w3-button">TEAM</a>
+    <a (click)="w3_close()" href="#work" class="w3-bar-item w3-button">WORK</a>
+    <a (click)="w3_close()" href="#pricing" class="w3-bar-item w3-button">PRICING</a>
+    <a (click)="w3_close()" href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
