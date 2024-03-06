@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { Photo } from '../types/photo';
+import { JsonPlaceholderService } from '../jsonplaceholder.service';
 
 @Component({
   selector: 'app-about',
@@ -10,14 +11,14 @@ import { Photo } from '../types/photo';
 })
 export class AboutComponent implements OnInit {
   private URL: string = `https://jsonplaceholder.typicode.com/photos`;
-  photos: Photo[] | null = null;
+  photos: Photo[] = [];
 
-  constructor(private http: HttpClient) { }
+  constructor(private JsonPlaceholderService: JsonPlaceholderService) { }
 
   ngOnInit(): void {
-    this.http.get(`${this.URL}?_start=0&_limit=4`)
+    this.JsonPlaceholderService.getPhotos(0, 4)
       .subscribe(photos => {
-        this.photos = photos as Photo[];
+        this.photos = photos;
       })
   }
 }
